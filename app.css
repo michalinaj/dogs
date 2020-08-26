@@ -1,0 +1,104 @@
+body {
+  background-color: #dbc3a8;
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", "Helvetica", "Arial", sans-serif;
+}
+
+section {
+  display: flex;
+  height: 100vh;
+}
+
+header {
+  width: 100%;
+  padding: 1px 1.2rem;
+  background-color: #ffffff;
+}
+
+.text-container {
+  background-color: #E3D3C1;
+  width: 25%;
+  min-width: 16rem;
+  display: flex;
+  flex-direction: column;
+  padding: 1.2rem;
+}
+
+#breed-list {
+  box-sizing: border-box;
+  background-image: url('searchicon.png');
+  background-repeat: no-repeat;
+  font-size: 16px;
+  border: none;
+  border-bottom: 1px solid #ddd;
+}
+
+#breed-list:focus {
+  outline: 3px solid #ddd;
+}
+
+.breed-selection-dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.doggie-list li {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+}
+
+.doggie-list li:hover {
+  background-color: #ddd;
+}
+
+.image-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #dbc3a8;
+  max-width: 850px;
+}
+
+#doggie-images {
+  max-width: 850px;
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  margin-bottom: 10px;
+  padding: 0;
+  flex-grow: 1;
+
+}
+
+.doggie-images-list__item img {
+  display: flex;
+  flex-direction: row;
+  margin: 2px;
+  height: 95px;
+  opacity: .6;
+  text-decoration: none;
+  transition: .3s ease-in-out;
+}
+
+.doggie-images-list__item img:hover {
+  box-shadow: 0 0 8px black;
+  transform: scale(1.05);
+  cursor: pointer;
+  border-radius: 5%;
+}
+
+img.active {
+  opacity: 1;
+}
+
+.doggie-image__large img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px 2px 2px solid #d3ba9f;
+  max-width: 850px;
+  max-height: 850px;
+}
