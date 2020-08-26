@@ -24,7 +24,7 @@ const displayBreeds = (jsonObj) => {
 
 const displayDogPics = (jsonObj) => {
   const dogs = jsonObj.message;
-  const nineDogImgs = dogs.slice(0, 5);
+  const nineDogImgs = dogs.slice(0, 9);
   dogImageList.innerHTML = ""; // remove "old" doggies
   for (dog of nineDogImgs) {
     const dogPic = document.createElement('li');
