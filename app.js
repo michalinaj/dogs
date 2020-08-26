@@ -24,7 +24,7 @@ const displayBreeds = (jsonObj) => {
 
 const displayDogPics = (jsonObj) => {
   const dogs = jsonObj.message;
-  const nineDogImgs = dogs.slice(0, 6);
+  const nineDogImgs = dogs.slice(0, 5);
   dogImageList.innerHTML = ""; // remove "old" doggies
   for (dog of nineDogImgs) {
     const dogPic = document.createElement('li');
@@ -52,26 +52,4 @@ const displayImage = (url) => {
   largeDogPic.innerHTML = `<img src="${url}" />`;
 }
 
-const setLargeImg = () => {
-  const largeDogPic = document.querySelector('.doggie-image__item');
-  const previewPics = document.querySelectorAll('doggie-images-list__item');
-
-  for (pic of previewPics) {
-    // pic.addEventListener("click", function() {
-    //   const picSrc = this.src;
-      console.log('hi');
-    // })
-  }
-//   const smallDogPics = dogImageList.getElementsByTagName('img');
-//   let largeDogPic = document.getElementById('doggie-image__item').value;
-
-//   largeDogPic.src = smallDogPics[0].src;
-//   const setLargePic = function(largeDogPic.src.split("?"[1]));
-
-//   setLargePic(src) {
-//     largeDogPic.src = ''
-//   }
-}
-
 getDataFromUrl(breedUrl, displayBreeds);
-setLargeImg();

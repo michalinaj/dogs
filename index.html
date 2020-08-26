@@ -10,31 +10,31 @@
   </head>
   <body>
     <header>
-    <h1>Doggos</h1>
+    <h1><a href="#">Doggos</a></h1>
     </header>
 
     <main>
-      <section>
-        <div class="text-container">
-          <div id="entry-text" class="card">
-            <p>Your favorite source of dog pics on the internet!</p>
-          </div>
-          <div id="dropdown">
-            <label for="breed-list">Choose your favorite breed</label>
-            <input autoComplete="on" placeholder="Pick a breed..." onclick ="clearList(this)" onchange="chooseBreed()" list="doggie-list" id="breed-list" /> 
-            <datalist id="doggie-list" >
-            </datalist>
-          </div>
-        </div>
-        <div class="image-container">
-          <div class="images">
-            <ul id="doggie-images"></ul>
-          </div>
-          <div class="doggie-image__large">
-            <img src="https://images.dog.ceo/breeds/pug/n02110958_12149.jpg" alt="=random pug of the day" id="doggie-image__item">
-          </div>
-        </div>
-      </section>
+        <section>
+            <div class="text-container">
+              <div id="entry-text" class="card">
+                <p>Your favorite source of dog pics on the internet!</p>
+              </div>
+              <div id="dropdown">
+                <label for="breed-list">Choose your favorite breed</label>
+                <input autoComplete="on" placeholder="Pick a breed..." onclick ="clearList(this)" onchange="chooseBreed()" list="doggie-list" id="breed-list" /> 
+                <datalist id="doggie-list" >
+                </datalist>
+              </div>
+            </div>
+            <div class="image-container">
+              <div class="images">
+                <ul id="doggie-images"></ul>
+              </div>
+              <div class="doggie-image__large">
+                <img src="https://images.dog.ceo/breeds/bulldog-boston/n02096585_10604.jpg" alt="=random pug of the day" id="doggie-image__item">
+              </div>
+            </div>
+        </section>
     </main>
   </body>
 </html>
